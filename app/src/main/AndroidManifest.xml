@@ -2,13 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false"/>
+        android:required="false" />
 
     <application
         android:allowBackup="true"
+        android:enableOnBackInvokedCallback="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +18,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet_Mobile_2"
-        tools:targetApi="31">
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".OffreActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TabbarActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".ShowqrActivity"
             android:exported="false">
@@ -25,7 +41,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".NoqrActivity"
+            android:name=".RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -66,8 +82,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
     </application>
-
 
 </manifest>

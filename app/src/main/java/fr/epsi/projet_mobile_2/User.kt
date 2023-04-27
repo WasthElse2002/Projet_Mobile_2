@@ -1,10 +1,10 @@
 package fr.epsi.projet_mobile_2
 
-class User(val firstName : String,
-           val lastName : String,
-           val email : String,
-           val address : String,
-           val zipcode : String,
-           val city : String,
-           val cardRef : String  ) {
+class User(var firstName : String,
+           var lastName : String,
+           var email : String,
+           var address : String,
+           var zipcode : String,
+           var city : String,
+           var cardRef : String) {
 }

@@ -12,4 +12,18 @@
     <string name="btn_text_signManual">Remplir le formulaire manuellement</string>
     <string name="create_title">Création de compte</string>
     <string name="scanner_le_qr_code">Scanner le Qr Code</string>
+    <string name="firstNameField">Prénom</string>
+    <string name="lastNameField">Nom</string>
+    <string name="addressField">Adresse</string>
+    <string name="emailField">Email</string>
+    <string name="zipcodeField">Code Postal</string>
+    <string name="cityField">Ville</string>
+    <string name="cardNumberField">Carte de fidélité</string>
+    <string name="create_accountButton">Créer</string>
+    <string name="myAccount">Mon compte</string>
+    <string name="carte">Carte</string>
+    <string name="offre">Offres</string>
+    <string name="magasins">Magasins</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
