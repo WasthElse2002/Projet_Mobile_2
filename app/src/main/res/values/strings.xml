@@ -24,6 +24,4 @@
     <string name="carte">Carte</string>
     <string name="offre">Offres</string>
     <string name="magasins">Magasins</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

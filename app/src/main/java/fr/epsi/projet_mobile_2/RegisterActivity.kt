@@ -57,7 +57,7 @@ class RegisterActivity : BaseActivity() {
             val ville = city?.text.toString()
             val carteNumero = cardNumber?.text.toString()
 
-            val sharedPreferences = getSharedPreferences("TestFragment", Context.MODE_PRIVATE)
+            val sharedPreferences = getSharedPreferences("Test", Context.MODE_PRIVATE)
             val editor = sharedPreferences.edit()
             editor.putString("FIRSTNAME", prenom)
             editor.putString("LASTNAME", nom)

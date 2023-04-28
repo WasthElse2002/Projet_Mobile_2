@@ -57,7 +57,7 @@ class Home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val sharedPreferences = this.activity?.getSharedPreferences("TestFragment", Context.MODE_PRIVATE)
+        val sharedPreferences = this.activity?.getSharedPreferences("Test", Context.MODE_PRIVATE)
         Log.i("activity : ", activity.toString())
         // barcode data
         val barcode_data = sharedPreferences?.getString("CARDNUMBER","000000000").toString();

@@ -32,14 +32,17 @@ class TabbarActivity : BaseActivity() {
             when(it.itemId) {
                 R.id.page_1 -> {
                     loadFragment(Home())
+                    setHeaderTitle(getString(R.string.carte))
                     true
                 }
                 R.id.page_2 -> {
                     loadFragment(Offer())
+                    setHeaderTitle(getString(R.string.offre))
                     true
                 }
                 R.id.page_3 -> {
                     loadFragment(Shop())
+                    setHeaderTitle(getString(R.string.magasins))
                     true
                 }
                 else -> false

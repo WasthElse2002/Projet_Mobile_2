@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        val sharedPreferences = getSharedPreferences("TestFragment", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("Test", Context.MODE_PRIVATE)
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
 
