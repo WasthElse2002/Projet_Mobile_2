@@ -1,5 +1,6 @@
 package fr.epsi.projet_mobile_2
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -22,6 +23,16 @@ open class BaseActivity : AppCompatActivity(){
         imageViewBack.visibility = View.VISIBLE
         imageViewBack.setOnClickListener(View.OnClickListener {
             finish()
+        })
+    }
+
+    fun showProfile() {
+        val imageViewProfile = findViewById<ImageView>(R.id.imageViewProfile)
+        imageViewProfile.visibility = View.VISIBLE
+        imageViewProfile.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, ModifyActivity::class.java)
+            startActivity(intent)
+
         })
     }
 

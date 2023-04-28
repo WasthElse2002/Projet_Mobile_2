@@ -20,6 +20,7 @@
     <string name="cityField">Ville</string>
     <string name="cardNumberField">Carte de fidélité</string>
     <string name="create_accountButton">Créer</string>
+    <string name="modify_accountButton">J\'enregistre les modifications</string>
     <string name="myAccount">Mon compte</string>
     <string name="carte">Carte</string>
     <string name="offre">Offres</string>

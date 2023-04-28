@@ -25,6 +25,7 @@ class TabbarActivity : BaseActivity() {
         setHeaderTitle(getString(R.string.myAccount))
 
         loadFragment(Home())
+        showProfile()
 
         // bottom Navigation
         bottom_nav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
@@ -33,16 +34,19 @@ class TabbarActivity : BaseActivity() {
                 R.id.page_1 -> {
                     loadFragment(Home())
                     setHeaderTitle(getString(R.string.carte))
+                    showProfile()
                     true
                 }
                 R.id.page_2 -> {
                     loadFragment(Offer())
                     setHeaderTitle(getString(R.string.offre))
+                    showProfile()
                     true
                 }
                 R.id.page_3 -> {
                     loadFragment(Shop())
                     setHeaderTitle(getString(R.string.magasins))
+                    showProfile()
                     true
                 }
                 else -> false

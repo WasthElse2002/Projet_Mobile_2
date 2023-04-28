@@ -21,7 +21,6 @@
             android:maxLines="1"
 
             />
-
         <ImageView
             android:visibility="gone"
             android:id="@+id/imageViewBack"
@@ -39,11 +38,10 @@
             android:id="@+id/imageViewProfile"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="20dp"
-            app:srcCompat="@drawable/"
+            app:srcCompat="@drawable/icon_user_profile"
             app:tint="@color/white" />
     </RelativeLayout>
 

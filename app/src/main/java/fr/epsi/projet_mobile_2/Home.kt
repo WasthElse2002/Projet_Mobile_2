@@ -1,5 +1,6 @@
 package fr.epsi.projet_mobile_2
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Bitmap
@@ -54,6 +55,7 @@ class Home : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -68,21 +70,19 @@ class Home : Fragment() {
         prenom.let { Log.i("param ", it) }
         nom.let { Log.i("param ", it) }
 
-        if (barcode_data != null) {
-            val imageView = view.findViewById<ImageView>(R.id.codeBar)
-            val userInfo = view.findViewById<TextView>(R.id.userInfo)
-            userInfo.text = "$prenom    $nom"
-            val cardInfo = view.findViewById<TextView>(R.id.cardInfo)
-            cardInfo.text = "$barcode_data"
-            val writer : MultiFormatWriter = MultiFormatWriter();
-            try {
-                val matrix : BitMatrix = writer.encode(barcode_data, BarcodeFormat.CODABAR, 800, 400)
-                val encoder = BarcodeEncoder()
-                val bitmap : Bitmap = encoder.createBitmap(matrix);
-                imageView.setImageBitmap(bitmap)
-            } catch (e : WriterException) {
-                e.printStackTrace()
-            }
+        val imageView = view.findViewById<ImageView>(R.id.codeBar)
+        val userInfo = view.findViewById<TextView>(R.id.userInfo)
+        userInfo.text = "$prenom    $nom"
+        val cardInfo = view.findViewById<TextView>(R.id.cardInfo)
+        cardInfo.text = barcode_data
+        val writer : MultiFormatWriter = MultiFormatWriter();
+        try {
+            val matrix : BitMatrix = writer.encode(barcode_data, BarcodeFormat.CODABAR, 800, 400)
+            val encoder = BarcodeEncoder()
+            val bitmap : Bitmap = encoder.createBitmap(matrix);
+            imageView.setImageBitmap(bitmap)
+        } catch (e : WriterException) {
+            e.printStackTrace()
         }
     }
 

@@ -40,14 +40,6 @@ class RegisterActivity : BaseActivity() {
         }
 
         buttonRegister.setOnClickListener {
-            var mainUser = User(
-                firstName?.text.toString(),
-                lastName?.text.toString(),
-                email?.text.toString(),
-                address?.text.toString(),
-                zipcode?.text.toString(),
-                city?.text.toString(),
-                cardNumber?.text.toString())
 
             val prenom = firstName?.text.toString()
             val nom = lastName?.text.toString()
