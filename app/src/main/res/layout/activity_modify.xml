@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <include
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LastNameTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastNameField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FistNameTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstNameField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AddressTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/addressField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ZipcodeTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/zipcodeField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CityTextFieldModify"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/cityField"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/buttonModify"
+            style="@style/Button"
+            android:text="@string/modify_accountButton" />
+
+    </LinearLayout>
+</LinearLayout>

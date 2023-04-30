@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Projet_Mobile_2</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="btn_text_signManual">Remplir le formulaire manuellement</string>
+    <string name="create_title">Création de compte</string>
+    <string name="scanner_le_qr_code">Scanner le Qr Code</string>
+    <string name="firstNameField">Prénom</string>
+    <string name="lastNameField">Nom</string>
+    <string name="addressField">Adresse</string>
+    <string name="emailField">Email</string>
+    <string name="zipcodeField">Code Postal</string>
+    <string name="cityField">Ville</string>
+    <string name="cardNumberField">Carte de fidélité</string>
+    <string name="create_accountButton">Créer</string>
+    <string name="modify_accountButton">J\'enregistre les modifications</string>
+    <string name="myAccount">Mon compte</string>
+    <string name="carte">Carte</string>
+    <string name="offre">Offres</string>
+    <string name="magasins">Magasins</string>
+</resources>
